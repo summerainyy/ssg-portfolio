@@ -19,7 +19,7 @@ A front-end developer in training who also writes the technical documentation th
 Static single page (HTML, CSS, vanilla JS), deployed on Render (`render.yaml`). The site mark is her initials, "SSG". Visitors arrive from a résumé, application email or Facebook link. The Facebook link is labeled with her full name, "Summer Anne San Gabriel".
 
 ## Capabilities and Constraints
-- Sections: hero, about, skills/toolkit, projects (4: weather capstone featured, plus RMS, RCRAO and library systems; user removed the To-Do list, ITayo, CLSU calendar and Sci-Tech video on 2026-11-08), education & credentials, contact, footer. The photo gallery strip and the contact photo were removed at the user's request on 2026-11-08.
+- Sections: hero, about, skills/toolkit, projects (4: weather capstone, RMS and library systems, and Task Garden, the owner's React to-do app, added at the user's request on 2026-11-12; user removed the To-Do list, ITayo, CLSU calendar and Sci-Tech video on 2026-11-08 and the RCRAO accounting system on 2026-11-08), education & credentials, contact, footer. The photo gallery strip and the contact photo were removed at the user's request on 2026-11-08.
 - Résumé PDF: `SummerAnne_SanGabriel_Resume.pdf`.
 - All current copy must stay word for word (headings may be shortened).
 - Photos shown: the hero cutout and the about portrait. (The earlier rule to keep every photo and the gallery was replaced by the user on 2026-11-08.)
@@ -30,7 +30,7 @@ Static single page (HTML, CSS, vanilla JS), deployed on Render (`render.yaml`). 
 
 ## Evidence on Hand
 - Photos: `images/hero-cutout.webp` and `images/about.jpg` shown; `images/hero.jpg` (og:image), `contact.jpg`, `g1.jpg`–`g5.jpg` kept on disk.
-- Project images in use: `images/projects/` weather, rms, library (todo, itayo, calendar, scitech files remain on disk but are no longer shown).
+- Project images in use: `images/projects/` weather, rms, library-dashboard, task-garden (todo, itayo, calendar, scitech files remain on disk but are no longer shown).
 - Real counts only: 4 projects, 5 certifications (Aug 2026 CSC eligibility, 4 Cisco NetAcad courses), graduating 2027.
 - No testimonials, client quotes, follower counts or invented metrics exist. Do not fabricate any.
 
@@ -42,3 +42,4 @@ Static single page (HTML, CSS, vanilla JS), deployed on Render (`render.yaml`). 
 
 ## Accessibility & Inclusion
 WCAG AA contrast for all text; respects reduced motion; keyboard-usable navigation.
+- About copy no longer mentions cybersecurity (user request, 2026-11-12); interests listed are UI/UX design and programming.

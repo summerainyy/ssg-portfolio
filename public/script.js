@@ -61,7 +61,20 @@ const fitWordmark = () => {
   wordmark.style.setProperty("--sy", sy.toFixed(3));
   wordmark.style.setProperty("--wm-extra", `${(h * (sy - 1)).toFixed(1)}px`);
 };
-(document.fonts ? document.fonts.ready : Promise.resolve()).then(fitWordmark);
+// Start the hero entrance only once the wordmark is final, so nothing jumps mid-animation.
+const hero = document.querySelector(".hero");
+let heroShown = false;
+const showHero = () => {
+  if (heroShown || !hero) return;
+  heroShown = true;
+  fitWordmark();
+  requestAnimationFrame(() => hero.classList.add("is-ready"));
+};
+// Wait for the display font itself (Gloock), but never longer than 2.5s on a slow connection.
+const displayFont = document.fonts && document.fonts.load ? document.fonts.load('400 1em "Gloock"') : Promise.resolve();
+Promise.race([displayFont, new Promise((r) => setTimeout(r, 2500))]).then(showHero, showHero);
+// If the font arrives after the entrance, re-fit so the stretched name stays exact.
+if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener("loadingdone", fitWordmark);
 window.addEventListener("load", fitWordmark);
 window.addEventListener("resize", fitWordmark);
 

@@ -7,7 +7,7 @@ related_targets: []
 
 # Surface: portfolio home (index.html)
 
-Mode: Experience (personal portfolio; the work and the photography lead). Primary visitor: OJT supervisor / HR skimming on a laptop. Action: email/phone/Facebook contact or résumé download. Proof: 4 real projects (user trimmed the list on 2026-11-08), 5 real credentials, real counts only. Constraints: all current copy verbatim (headings may shorten), photos limited to the hero cutout and about portrait (user, 2026-11-08: "remove the picture at the bottom and the 'a little bit about me' section"), original golden-hour palette kept.
+Mode: Experience (personal portfolio; the work and the photography lead). Primary visitor: OJT supervisor / HR skimming on a laptop. Action: email/phone/Facebook contact or résumé download. Proof: 3 real projects (user trimmed the list on 2026-11-08 and removed RCRAO on 2026-11-12), 5 real credentials, real counts only. Constraints: all current copy verbatim (headings may shorten), photos limited to the hero cutout and about portrait (user, 2026-11-08: "remove the picture at the bottom and the 'a little bit about me' section"), original golden-hour palette kept.
 
 ## Direction contract
 

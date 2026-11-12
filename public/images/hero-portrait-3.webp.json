@@ -1,0 +1,4 @@
+{
+  "prompt": "origin: portrait photo supplied by the owner in chat on 2026-11-12 (2000x1333 webp on a white background); white background removed locally with @imgly/background-removal-node (model medium), then trimmed of empty transparent space to 903x1240; not generated",
+  "createdAt": "2026-11-12T00:00:00.000Z"
+}
