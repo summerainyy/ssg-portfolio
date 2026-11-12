@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Summer Anne San Gabriel — IT Student</title>
+  <meta name="description" content="Portfolio of Summer Anne S. San Gabriel, 4th-year BS Information Technology student (System Development) at Central Luzon State University." />
+  <meta property="og:title" content="Summer Anne San Gabriel — IT Student" />
+  <meta property="og:description" content="Front-end developer in the making. BSIT, Central Luzon State University." />
+  <meta property="og:image" content="images/hero.jpg" />
+  <meta name="theme-color" content="#14100c" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2314100c'/><text x='50%25' y='58%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='38' fill='%23e8a33d'>S</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <!-- drawn icon set: one 1.5px stroke throughout -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-ne" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 20V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M20 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></symbol>
+  </svg>
+
+  <a class="skip" href="#projects">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="brand" aria-label="Summer Anne San Gabriel, back to top">SSG</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span></button>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact" class="nav-cta">Say hello</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO: lantern night -->
+    <section class="hero" aria-labelledby="hero-name">
+      <dl class="meta">
+        <div><dt>Based in</dt><dd>Nueva Ecija, PH</dd></div>
+        <div><dt>Studying</dt><dd>BSIT · CLSU</dd></div>
+        <div><dt>Graduating</dt><dd>2027</dd></div>
+        <div class="status"><dt class="sr-only">Status</dt><dd><span class="dot" aria-hidden="true"></span>Open for IT OJT opportunities</dd></div>
+      </dl>
+
+      <div class="hero-title">
+      <h1 id="hero-name" class="hero-name">
+        <span class="wordmark" aria-hidden="true"><span class="wm-line"><span>S</span><span>U</span><span>M</span><span>M</span><span>E</span><span>R</span></span><span class="wm-line"><span>A</span><span>N</span><span>N</span><span>E</span></span></span>
+        <span class="sr-only">Summer Anne San Gabriel</span>
+      </h1>
+      </div>
+
+      <figure class="hero-photo">
+        <img src="images/hero-portrait-2.webp" alt="Summer Anne looking over her shoulder in a black and gold patterned shirt" width="890" height="1235" fetchpriority="high" />
+      </figure>
+
+      <ul class="hero-contact" aria-label="Contact shortcuts">
+        <li><a href="mailto:summerannesg@gmail.com"><span>Email</span><strong>summerannesg@gmail.com</strong><svg class="ico"><use href="#i-ne"/></svg></a></li>
+        <li><a href="tel:+639497088601"><span>Phone</span><strong>+63 949 708 8601</strong><svg class="ico"><use href="#i-ne"/></svg></a></li>
+        <li><a href="https://www.facebook.com/summeeerrr" target="_blank" rel="noopener"><span>Facebook</span><strong>Summer Anne San Gabriel</strong><svg class="ico"><use href="#i-ne"/></svg><span class="sr-only"> (opens in a new tab)</span></a></li>
+      </ul>
+
+      <div class="hero-copy">
+        <p class="title-card" aria-hidden="true">Summer Anne San Gabriel</p>
+        <p class="lede">IT student majoring in System Development at Central Luzon State University. I build interfaces for web apps, write the documentation that holds a system together, and I'm enjoying every bit of it.</p>
+        <div class="cta">
+          <a href="#projects" class="btn btn-solid">See my work <svg class="ico"><use href="#i-down"/></svg></a>
+          <a href="SummerAnne_SanGabriel_Resume.pdf" class="btn btn-line" target="_blank" rel="noopener">View résumé <svg class="ico"><use href="#i-ne"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS: coverflow card slider -->
+    <section class="projects" id="projects" aria-labelledby="projects-h">
+      <div class="sec-row">
+        <h2 id="projects-h" class="reveal">Projects</h2>
+        <div class="slider-controls">
+          <p class="slide-count" aria-live="polite"><span id="slideNow">1</span> / 4</p>
+          <div class="arrows">
+            <button class="arrow" id="slidePrev" aria-label="Previous project" aria-controls="stage"><svg class="ico"><use href="#i-left"/></svg></button>
+            <button class="arrow" id="slideNext" aria-label="Next project" aria-controls="stage"><svg class="ico"><use href="#i-right"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="stage" id="stage" tabindex="0" aria-roledescription="carousel" aria-label="Projects. Use the arrow keys to move between them.">
+        <article class="pcard" role="group" aria-roledescription="slide" aria-label="1 of 4">
+          <div class="shot shot-wide"><img src="images/projects/weather.jpg" alt="CLIMA weather dashboard showing live campus readings" loading="lazy" /></div>
+          <div class="pcard-body">
+            <p class="pmeta"><span class="tag">Ongoing</span> Capstone · Team of 3 · Front-end developer</p>
+            <h3>Localized Web-Based Weather Monitoring &amp; Forecasting System</h3>
+            <p>A real-time weather dashboard for CLSU's Center of Climate Change and Environmental Management, showing temperature, humidity, pressure, rainfall and air quality. I built the front end, helped set up the weather station tower, and wrote the client profile, significance of the study, definition of terms, and literature review.</p>
+            <ul class="stack"><li>Front-end</li><li>Data dashboard</li><li>Research writing</li></ul>
+          </div>
+        </article>
+        <article class="pcard" role="group" aria-roledescription="slide" aria-label="2 of 4">
+          <div class="shot"><img src="images/projects/rms.jpg" alt="RMS restaurant logo on a storefront" loading="lazy" /></div>
+          <div class="pcard-body">
+            <p class="pmeta">Academic · Team of 3 · Sep 2026</p>
+            <h3>Basic Restaurant Management System</h3>
+            <p>Helped develop the user interface of a restaurant management app, working with my teammates on its implementation.</p>
+            <ul class="stack"><li>React</li><li>Laravel</li></ul>
+          </div>
+        </article>
+        <article class="pcard" role="group" aria-roledescription="slide" aria-label="3 of 4">
+          <div class="shot shot-type" aria-hidden="true"><span>SRS</span><small>12 modules</small></div>
+          <div class="pcard-body">
+            <p class="pmeta">SCRUM · Team of 7 · Oct 2025</p>
+            <h3>RCRAO Accounting System</h3>
+            <p>Documented the System Features section of the SRS for 12 modules, from login with account lockout and role-based access to PDF reports and automated backup.</p>
+            <ul class="stack"><li>PHP</li><li>MySQL</li><li>Bootstrap</li><li>Documentation</li></ul>
+          </div>
+        </article>
+        <article class="pcard" role="group" aria-roledescription="slide" aria-label="4 of 4">
+          <div class="shot shot-fit"><img src="images/projects/library-dashboard.jpg" alt="Library Management System dashboard with book counts, recently added titles and titles by category" loading="lazy" width="1690" height="823" /></div>
+          <div class="pcard-body">
+            <p class="pmeta">Individual · Feb 2025</p>
+            <h3>Basic Library Management System</h3>
+            <p>A PHP library system I built on my own, with login, book management (CRUD), archiving, search and PDF generation.</p>
+            <ul class="stack"><li>PHP</li><li>MySQL</li><li>Bootstrap</li></ul>
+          </div>
+        </article>
+      </div>
+      <div class="dots" role="group" aria-label="Choose a project"><button class="pip" type="button" aria-label="Show project 1"></button><button class="pip" type="button" aria-label="Show project 2"></button><button class="pip" type="button" aria-label="Show project 3"></button><button class="pip" type="button" aria-label="Show project 4"></button></div>
+    </section>
+
+    <!-- ABOUT: first daylight band -->
+    <section class="about band-day" id="about" aria-labelledby="about-h">
+      <figure class="about-photo reveal">
+        <img class="pop-frame" src="images/about.jpg" alt="" loading="lazy" width="1000" height="1500" />
+        <img class="pop-cut" src="images/about-cutout.webp" alt="Smiling portrait of Summer Anne" loading="lazy" width="1000" height="1500" />
+      </figure>
+      <div class="about-text">
+        <h2 id="about-h" class="reveal">Hi, I'm Summer <span class="wave" aria-hidden="true">👋</span></h2>
+        <p>I'm from Malayantoc, Santo Domingo, Nueva Ecija, and I'm a fourth-year <strong>Bachelor of Science in Information Technology</strong> student majoring in System Development at Central Luzon State University.</p>
+        <p>Through my academic projects I've worked on web application development, user interface design, and technical documentation. Right now I'm the front-end developer on our capstone, a real-time weather dashboard for CLSU. I'm also a <strong>Career Service Professional Eligibility passer</strong>.</p>
+        <p>I'm looking for an IT OJT where I can apply what I've learned, sharpen my practical skills, and get real hands-on industry experience. Outside of code? I'm just enjoying my life ✨</p>
+        <p>I love mixing technology with creativity. I'm into <strong>UI/UX design, programming and cybersecurity</strong>, and I also enjoy video editing, graphic design and photography. I'm still learning, and I treat every project as a chance to grow.</p>
+      </div>
+      <ul class="traits">
+        <li>Adaptability &amp; continuous learning</li>
+        <li>Problem-solving &amp; analytical thinking</li>
+        <li>Teamwork &amp; collaboration</li>
+        <li>Technical documentation</li>
+        <li>Time management &amp; organization</li>
+        </ul>
+    </section>
+
+    <!-- SKILLS + real counts -->
+    <section class="skills" id="skills" aria-labelledby="skills-h">
+      <div class="skills-top">
+        <h2 id="skills-h" class="reveal">What I work <em>with</em></h2>
+        <dl class="counts" aria-label="At a glance">
+          <div><dt>Projects</dt><dd>4</dd></div>
+          <div><dt>Certifications</dt><dd>5</dd></div>
+          <div><dt>Tools &amp; languages</dt><dd>27</dd></div>
+          <div><dt>Expected graduation</dt><dd>2027</dd></div>
+        </dl>
+      </div>
+      <div class="bento-grid">
+        <article class="bento b-lang"><h3>Languages</h3><p class="bento-n" aria-hidden="true">6</p><ul class="tags"><li>PHP</li><li>Python</li><li>JavaScript</li><li>C</li><li>HTML</li><li>CSS</li></ul></article>
+        <article class="bento b-fw"><h3>Frameworks &amp; libraries</h3><p class="bento-n" aria-hidden="true">5</p><ul class="tags"><li>React</li><li>Laravel</li><li>Flutter</li><li>Bootstrap</li><li>Tailwind CSS</li></ul></article>
+        <article class="bento b-db"><h3>Database</h3><p class="bento-n" aria-hidden="true">1</p><ul class="tags"><li>MySQL</li></ul></article>
+        <article class="bento b-dev"><h3>Dev tools</h3><p class="bento-n" aria-hidden="true">5</p><ul class="tags"><li>VS Code</li><li>XAMPP</li><li>Git</li><li>GitHub</li><li>Jupyter Notebook</li></ul></article>
+        <article class="bento b-plat"><h3>Platforms &amp; networking</h3><p class="bento-n" aria-hidden="true">2</p><ul class="tags"><li>WordPress</li><li>Cisco Packet Tracer</li></ul></article>
+        <article class="bento b-ai"><h3>AI tools</h3><p class="bento-n" aria-hidden="true">3</p><ul class="tags"><li>Claude</li><li>Gemini</li><li>ChatGPT</li></ul></article>
+        <article class="bento b-design"><h3>Design &amp; creative</h3><p class="bento-n" aria-hidden="true">5</p><ul class="tags"><li>UI/UX design</li><li>Adobe Photoshop</li><li>Graphic design</li><li>Video editing</li><li>Photography</li></ul></article>
+      </div>
+    </section>
+
+    <!-- CREDENTIALS: second daylight band -->
+    <section class="credentials band-day" id="credentials" aria-labelledby="cred-h">
+      <h2 id="cred-h" class="reveal">Where I've <em>learned</em></h2>
+      <div class="cred-grid">
+        <article class="edu reveal">
+          <h3>Bachelor of Science in Information Technology</h3>
+          <p class="school">Central Luzon State University (CLSU)</p>
+          <p>Major in System Development</p>
+          <p class="grad">Expected graduation · 2027</p>
+        </article>
+        <ol class="timeline">
+          <li><time datetime="2026-08">Aug 2026</time><div><strong>Career Service Professional Eligibility</strong><span>Civil Service Commission · Professional Level</span></div></li>
+          <li><time datetime="2026-04">Apr 2026</time><div><strong>Introduction to Modern AI</strong><span>Cisco Networking Academy</span></div></li>
+          <li><time datetime="2026-03">Mar 2026</time><div><strong>Security and Connectivity Support</strong><span>Cisco Networking Academy</span></div></li>
+          <li><time datetime="2026-03">Mar 2026</time><div><strong>Creating Compelling Reports</strong><span>Cisco Networking Academy</span></div></li>
+          <li><time datetime="2026-03">Mar 2026</time><div><strong>IT Customer Support Basics</strong><span>Cisco Networking Academy</span></div></li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER: contact details and résumé -->
+  <footer class="footer" id="contact" aria-label="Contact">
+    <div class="footer-top">
+      <div class="footer-intro">
+        <p class="foot-mark" aria-hidden="true">SSG</p>
+        <p class="foot-lede">Looking for an OJT trainee who's eager to learn? I'd love to hear from you.</p>
+      </div>
+      <ul class="foot-links">
+        <li><a href="mailto:summerannesg@gmail.com"><span>Email</span><strong>summerannesg@gmail.com</strong></a></li>
+        <li><a href="tel:+639497088601"><span>Phone</span><strong>+63 949 708 8601</strong></a></li>
+        <li><a href="https://www.facebook.com/summeeerrr" target="_blank" rel="noopener"><span>Facebook</span><strong>Summer Anne San Gabriel</strong><span class="sr-only"> (opens in a new tab)</span></a></li>
+      </ul>
+      <a href="SummerAnne_SanGabriel_Resume.pdf" class="btn btn-solid foot-cv" target="_blank" rel="noopener">View my résumé <svg class="ico"><use href="#i-ne"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+    </div>
+    <div class="footer-bar">
+      <p>© <span id="year">2026</span> Summer Anne S. San Gabriel</p>
+      <a href="#top">Back to top <svg class="ico"><use href="#i-up"/></svg></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

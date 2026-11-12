@@ -1,0 +1,4 @@
+{
+  "prompt": "origin: owner's About photograph (same shot as images/about.jpg) supplied in chat on 2026-11-12; background removed locally with @imgly/background-removal-node 1.4.5 (medium model), resized to about.jpg's 1000x1500 canvas so both layers align; not generated",
+  "createdAt": "2026-11-12T03:49:09.426Z"
+}
