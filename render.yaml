@@ -3,7 +3,7 @@ services:
     name: summer-portfolio
     runtime: static
     buildCommand: ""
-    staticPublishPath: .
+    staticPublishPath: public
     headers:
       - path: /images/*
         name: Cache-Control
