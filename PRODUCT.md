@@ -31,7 +31,7 @@ Static single page (HTML, CSS, vanilla JS), deployed on Render (`render.yaml`). 
 ## Evidence on Hand
 - Photos: `images/hero-cutout.webp` and `images/about.jpg` shown; `images/hero.jpg` (og:image), `contact.jpg`, `g1.jpg`–`g5.jpg` kept on disk.
 - Project images in use: `images/projects/` weather, rms, library-dashboard, task-garden (todo, itayo, calendar, scitech files remain on disk but are no longer shown).
-- Real counts only: 4 projects, 5 certifications (Aug 2026 CSC eligibility, 4 Cisco NetAcad courses), graduating 2027.
+- Real counts only: 4 projects, 11 certificates (Aug 2026 CSC Professional eligibility, passed but the certificate is not yet claimed, so its card shows the exam result slip; Canva Infinity 2026 webinar and Canva AI in the Classroom, Jul 2026; Cyberhygiene Training under the APAC Cybersecurity Fund, May 2026; 4 Cisco NetAcad courses, Mar and Apr 2026; 2 Coursera projects, Data Visualization using Plotly and Bokeh, Mar 2026; Kaggle Learn Data Visualization, Mar 2026), graduating 2027. The certificate list was updated at the user's request on 2026-11-13.
 - No testimonials, client quotes, follower counts or invented metrics exist. Do not fabricate any.
 
 ## Product Principles

@@ -339,7 +339,7 @@ h2 {
 .pip::after { content: ""; position: absolute; inset: -12px -5px; } /* larger tap area */
 .dots { gap: 10px; padding: 9px 12px; }
 .pip:hover:not([aria-current="true"]) { background: rgba(243, 230, 208, .6); }
-@media (prefers-reduced-motion: reduce) { .pcard, .pip { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .pcard, .pip { transition: none; } .cert-track { scroll-behavior: auto; } }
 .shot { position: absolute; inset: 0; overflow: hidden; background: #0f0b08; }
 .shot img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
 .shot-wide img { object-position: 20% top; }
@@ -378,11 +378,37 @@ h2 {
 .edu p { color: var(--day-muted); }
 .edu .school { color: var(--day-ink); font-weight: 600; }
 .grad { margin-top: 22px; font-family: var(--mono); font-size: .82rem; }
-.timeline { border-top: 1px solid var(--day-line); }
-.timeline li { display: grid; grid-template-columns: 110px 1fr; gap: 20px; padding: clamp(10px, 1.7svh, 16px) 0; border-bottom: 1px solid var(--day-line); }
-.timeline time { font-family: var(--mono); font-size: .82rem; color: var(--rust-ink); padding-top: 3px; font-variant-numeric: tabular-nums; }
-.timeline strong { display: block; color: var(--day-ink); }
-.timeline span { color: var(--day-muted); font-size: .92rem; }
+/* certificates: a sideways card slider; each card is the certificate itself on white paper, caption underneath */
+.certs { min-width: 0; border-top: 3px solid var(--rust-ink); padding-top: 18px; }
+.certs-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+.certs-head h3 { font-family: var(--display); font-weight: 400; font-size: clamp(1.6rem, 2.6vw, 2.3rem); line-height: 1.1; }
+.certs .slide-count { color: var(--day-muted); }
+.certs .slide-count span { color: var(--day-ink); }
+.certs .arrow { border-color: var(--day-line); color: var(--day-ink); }
+.certs .arrow:hover:not(:disabled) { background: var(--rust-ink); border-color: var(--rust-ink); color: var(--day); }
+.cert-track {
+  --cw: min(78%, 420px); --cg: 18px;
+  display: grid; grid-auto-flow: column; grid-auto-columns: var(--cw); gap: var(--cg);
+  overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+  padding-bottom: 6px; scrollbar-width: none;
+  /* room after the last card so every card, the last included, can snap to the front */
+  padding-inline-end: max(0px, calc(100% - var(--cw) - var(--cg)));
+}
+.cert-track::-webkit-scrollbar { display: none; }
+.cert { position: relative; scroll-snap-align: start; min-width: 0; } /* keeps the hidden link labels inside the slider */
+.cert-frame {
+  position: relative; display: block; aspect-ratio: 4 / 3; background: #fff;
+  border: 1px solid var(--day-line); border-radius: 2px; overflow: hidden; transition: border-color .25s;
+}
+/* the whole certificate always shows, portrait or landscape, fitted inside the frame */
+.cert-frame img { position: absolute; inset: 12px; width: calc(100% - 24px); height: calc(100% - 24px); object-fit: contain; transition: transform .6s var(--ease); }
+.cert-frame:hover { border-color: var(--rust-ink); }
+.cert-frame:hover img { transform: scale(1.03); }
+.cert-cap { padding-top: 12px; }
+.cert-cap time { display: block; font-family: var(--mono); font-size: .8rem; color: var(--rust-ink); font-variant-numeric: tabular-nums; margin-bottom: 4px; }
+.cert-cap strong { display: block; color: var(--day-ink); line-height: 1.3; }
+.cert-cap span { display: block; color: var(--day-muted); font-size: .9rem; margin-top: 2px; }
+.cert-note { display: inline-block; margin-top: 8px; padding: 3px 9px; border: 1px solid var(--rust-ink); border-radius: 2px; font-style: normal; font-size: .78rem; font-weight: 600; color: var(--rust-ink); }
 
 /* ===== Footer: contact details and résumé ===== */
 .footer {
@@ -466,7 +492,7 @@ h2 {
   .pcard[data-pos="-1"] { transform: translateX(-60%) scale(.84) rotateY(20deg); }
   .pcard[data-pos="1"] { transform: translateX(60%) scale(.84) rotateY(-20deg); }
   .arrow { width: 44px; height: 44px; }
-  .timeline li { grid-template-columns: 1fr; gap: 4px; }
+  .cert-track { --cw: 86%; --cg: 14px; }
 }
 
 /* ===== Small phones ===== */

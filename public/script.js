@@ -131,3 +131,24 @@ if (stage) {
 
   render();
 }
+
+// Certificates slider: native sideways scroll with snap; the arrows step one card and the counter follows the scroll.
+const certTrack = document.getElementById("certTrack");
+if (certTrack) {
+  const certs = [...certTrack.children];
+  const prev = document.getElementById("certPrev");
+  const next = document.getElementById("certNext");
+  const now = document.getElementById("certNow");
+  const step = () => (certs[1] ? certs[1].offsetLeft - certs[0].offsetLeft : certTrack.clientWidth);
+  const sync = () => {
+    const i = Math.min(certs.length - 1, Math.round(certTrack.scrollLeft / step()));
+    now.textContent = i + 1;
+    prev.disabled = i === 0;
+    next.disabled = i === certs.length - 1;
+  };
+  prev.addEventListener("click", () => certTrack.scrollBy({ left: -step() }));
+  next.addEventListener("click", () => certTrack.scrollBy({ left: step() }));
+  certTrack.addEventListener("scroll", sync, { passive: true });
+  window.addEventListener("resize", sync);
+  sync();
+}
